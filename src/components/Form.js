@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 
-function Form() {
+function Form({
+    onAddCountry
+}) {
 const [form, setForm] = useState({
     country: "",
     continent: "",
@@ -11,6 +13,7 @@ const [form, setForm] = useState({
 
 console.log(form)
 
+// CONTROLLED INPUTS
 function handleChange(e) {
     const key = e.target.name
     const value = e.target.value
@@ -20,11 +23,31 @@ function handleChange(e) {
     })
 }
 
+// POST REQUEST
+function handleSubmit(e) {
+    e.preventDefault()
+    const newCountry = {
+        country: form.country,
+        continent: form.continent,
+        capital: form.capital,
+        flagImage: form.flagImage,
+        favorite: form.favorite
+    }
+    fetch("http://localhost:3000/countries", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newCountry)
+    })
+    .then(res => res.json())
+    .then(newCountry => onAddCountry(newCountry))
+}
 
 return (
     <div className="new-country-form">
       <h2>New Country Visited</h2>
-      <form onSubmit={null}>
+      <form onSubmit={handleSubmit}>
         <input 
         type="text" 
         name="country" 

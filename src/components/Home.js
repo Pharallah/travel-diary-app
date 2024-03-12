@@ -6,6 +6,14 @@ import CountryList from "../pages/CountryList";
 function Home() {
 const [countries, setCountries] = useState([])
   
+function onAddCountry(newCountry) {
+  const updatedCountries = [
+    ...countries,
+    newCountry
+  ]
+  setCountries(updatedCountries)
+}
+
 return (
   <>
     <header className="home">
@@ -17,7 +25,7 @@ return (
       </h1>
       <NavBar />
     </header>
-    <Form />
+    <Form onAddCountry={onAddCountry}/>
     <CountryList 
     countries={countries}
     setCountries={setCountries}
