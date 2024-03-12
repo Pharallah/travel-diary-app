@@ -11,7 +11,7 @@ const [form, setForm] = useState({
     favorite: false
 })
 
-// CONTROLLED INPUTS
+// SETS UP CONTROLLED INPUTS
 function handleChange(e) {
     const key = e.target.name
     const value = e.target.type === "checkbox" ? e.target.checked : e.target.value
@@ -40,6 +40,13 @@ function handleSubmit(e) {
     })
     .then(res => res.json())
     .then(newCountry => onAddCountry(newCountry))
+    setForm({
+        country: "",
+        continent: "",
+        capital: "",
+        flagImage: "",
+        favorite: false
+    })
 }
 
 return (

@@ -34,7 +34,6 @@ function onCountryClick(id) {
     
 }
 
-
 return (
     <li className="card">
         <h4>{country.country}</h4>
