@@ -1,11 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import CountryCard from '../components/CountryCard';
 
-function CountryList() {
+function CountryList({
+    countries,
+    setCountries
+}) {
   
-    //render countrycards here
+    useEffect(() => {
+        fetch("http://localhost:3000/countries")
+            .then(res => res.json())
+            .then(list => setCountries(list))
+    }, [])
+
+    // MAIN DISPLAY
+  const mainDisplay = countries.map(country => {
+    return <CountryCard
+    key={country.id}
+    country={country}
+    />
+  })
   
     return (
-    <ul className='cards'>{}</ul>
+    <ul className='cards'>
+        {mainDisplay}
+    </ul>
   )
 }
 

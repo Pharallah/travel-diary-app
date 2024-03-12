@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "./NavBar";
 import Form from "./Form";
+import CountryList from "../pages/CountryList";
 
 function Home() {
+  const [countries, setCountries] = useState([])
+  
   return (
     <>
       <header className="home">
@@ -15,6 +18,10 @@ function Home() {
         <NavBar />
       </header>
       <Form />
+      <CountryList 
+      countries={countries}
+      setCountries={setCountries}
+      />
     </>
   );
 }

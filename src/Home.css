@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-
 header h1 {
   font-size: 2.5em;
   font-weight: 900;
@@ -40,4 +39,44 @@ header h1 {
 
 .new-country-form button {
   width: 150px;
+}
+
+.cards {
+  list-style: none;
+  background-color: slategray;
+}
+
+.card {
+  margin: 1rem;
+}
+
+.card img {
+  width: 50%;
+}
+
+.card button {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc(33% - 2rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: calc(25% - 2rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: calc(20% - 2rem);
+  }
 }
