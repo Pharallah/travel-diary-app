@@ -20,7 +20,7 @@ function CountryList({
     />
   })
   
-    return (
+return (
     <ul className='cards'>
         {mainDisplay}
     </ul>

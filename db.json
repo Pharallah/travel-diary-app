@@ -5,35 +5,40 @@
         "country": "Philippines",
         "continent": "Asia",
         "capital": "Manila",
-        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/1600px-Flag_of_the_Philippines.svg.png"
+        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/1600px-Flag_of_the_Philippines.svg.png",
+        "favorite": true
       },
       {
         "id": 2,
         "country": "Japan",
         "continent": "Asia",
         "capital": "Tokyo",
-        "flagImage": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/510px-Flag_of_Japan.svg.png"
+        "flagImage": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/510px-Flag_of_Japan.svg.png",
+        "favorite": true
       },
       {
         "id": 3,
         "country": "Portugal",
         "continent": "Europe",
         "capital": "Lisbon",
-        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/510px-Flag_of_Portugal.svg.png"
+        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/510px-Flag_of_Portugal.svg.png",
+        "favorite": true
       },
       {
         "id": 4,
         "country": "Jordan",
         "continent": "Asia",
         "capital": "Amman",
-        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/510px-Flag_of_Jordan.svg.png"
+        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/510px-Flag_of_Jordan.svg.png",
+        "favorite": true
       },
       {
         "id": 5,
         "country": "United Kingdom",
         "continent": "Europe",
         "capital": "London",
-        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/510px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/510px-Flag_of_the_United_Kingdom_%281-2%29.svg.png",
+        "favorite": true
       }
     ]
   }

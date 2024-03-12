@@ -1,7 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Form() {
-  return (
+const [form, setForm] = useState({
+    country: "",
+    continent: "",
+    capital: "",
+    flagImage: "",
+    favorite: ""
+})
+
+console.log(form)
+
+function handleChange(e) {
+    const key = e.target.name
+    const value = e.target.value
+    setForm({
+        ...form,
+        [key]: value
+    })
+}
+
+
+return (
     <div className="new-country-form">
       <h2>New Country Visited</h2>
       <form onSubmit={null}>
@@ -9,12 +29,13 @@ function Form() {
         type="text" 
         name="country" 
         placeholder="Country"
-        value={null}
-        onChange={null} 
+        value={form.country}
+        onChange={handleChange} 
         />
         <select 
-            value={null}
-            onChange={null}
+            name="continent" 
+            value={form.continent}
+            onChange={handleChange} 
         >
             <option value={null}>Please choose...</option>
             <option value="Asia">Asia</option>
@@ -28,19 +49,20 @@ function Form() {
         type="text" 
         name="capital" 
         placeholder="Capital"
-        value={null}
-        onChange={null} 
+        value={form.capital}
+        onChange={handleChange} 
         />  
         <input 
         type="text" 
-        name="" 
+        name="flagImage" 
         placeholder="Flag Image URL"
-        value={null}
-        onChange={null} 
+        value={form.flagImage}
+        onChange={handleChange} 
         />
         <select 
-            value={null}
-            onChange={null}
+            name="favorite" 
+            value={form.favorite}
+            onChange={handleChange} 
         >
             <option value="true">Favorite</option>
             <option value="false">Unfavorite</option>
