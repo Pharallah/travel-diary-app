@@ -8,15 +8,13 @@ const [form, setForm] = useState({
     continent: "",
     capital: "",
     flagImage: "",
-    favorite: ""
+    favorite: false
 })
-
-console.log(form)
 
 // CONTROLLED INPUTS
 function handleChange(e) {
     const key = e.target.name
-    const value = e.target.value
+    const value = e.target.type === "checkbox" ? e.target.checked : e.target.value
     setForm({
         ...form,
         [key]: value
@@ -82,14 +80,13 @@ return (
         value={form.flagImage}
         onChange={handleChange} 
         />
-        <select 
-            name="favorite" 
-            value={form.favorite}
-            onChange={handleChange} 
-        >
-            <option value="true">Favorite</option>
-            <option value="false">Unfavorite</option>
-        </select>
+        <label>Favorite?</label>
+        <input 
+            type="checkbox"
+            name="favorite"
+            checked={form.favorite}
+            onChange={handleChange}
+        />
         <button type="submit">Submit</button>
       </form>
     </div>
