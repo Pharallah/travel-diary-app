@@ -80,13 +80,14 @@ return (
         value={form.flagImage}
         onChange={handleChange} 
         />
-        <label>Favorite?</label>
+        <label>Favorite?
         <input 
             type="checkbox"
             name="favorite"
             checked={form.favorite}
             onChange={handleChange}
         />
+        </label>
         <button type="submit">Submit</button>
       </form>
     </div>

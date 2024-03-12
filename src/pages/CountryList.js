@@ -17,6 +17,8 @@ function CountryList({
     return <CountryCard
     key={country.id}
     country={country}
+    countries={countries}
+    setCountries={setCountries}
     />
   })
   

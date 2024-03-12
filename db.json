@@ -45,7 +45,7 @@
       "continent": "Europe",
       "capital": "Paris",
       "flagImage": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/510px-Flag_of_France.svg.png",
-      "favorite": "false",
+      "favorite": true,
       "id": 6
     }
   ]
