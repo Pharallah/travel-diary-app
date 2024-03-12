@@ -15,3 +15,29 @@ header h1 {
   padding-left: .5rem;
   text-shadow: 0 0 0 var(--green);
 }
+
+.new-country-form {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: darkgrey;
+}
+
+.new-country-form form {
+  display: flex;
+  justify-content: center;
+}
+
+.new-country-form input {
+  margin-right: 2rem;
+  flex: 1;
+}
+
+.new-country-form select {
+  margin-right: 2rem;
+  flex: 1;
+}
+
+.new-country-form button {
+  width: 150px;
+}

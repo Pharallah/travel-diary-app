@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
+import Form from "./Form";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         </h1>
         <NavBar />
       </header>
+      <Form />
     </>
   );
 }

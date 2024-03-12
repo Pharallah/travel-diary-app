@@ -5,45 +5,35 @@
         "country": "Philippines",
         "continent": "Asia",
         "capital": "Manila",
-        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/1600px-Flag_of_the_Philippines.svg.png",
-        "favoriteFood": "Palabok",
-        "favoriteFoodImage": "https://mamasitas.com/wp-content/uploads/2015/08/pancit-palabok-1200x715.jpg"
+        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/1600px-Flag_of_the_Philippines.svg.png"
       },
       {
         "id": 2,
         "country": "Japan",
         "continent": "Asia",
         "capital": "Tokyo",
-        "flagImage": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/510px-Flag_of_Japan.svg.png",
-        "favoriteFood": "Tonkotsu Ramen",
-        "favoriteFoodImage": "https://rakiyataramen.com/wp-content/uploads/2021/10/tonkotsu-shoyu-yata-king-sm.png"
+        "flagImage": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/510px-Flag_of_Japan.svg.png"
       },
       {
         "id": 3,
         "country": "Portugal",
         "continent": "Europe",
         "capital": "Lisbon",
-        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/510px-Flag_of_Portugal.svg.png",
-        "favoriteFood": "Tripas à moda do Porto",
-        "favoriteFoodImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Tripas_%288907365960%29.jpg/440px-Tripas_%288907365960%29.jpg"
+        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/510px-Flag_of_Portugal.svg.png"
       },
       {
         "id": 4,
         "country": "Jordan",
         "continent": "Asia",
         "capital": "Amman",
-        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/510px-Flag_of_Jordan.svg.png",
-        "favoriteFood": "Mansaf",
-        "favoriteFoodImage": "https://cdn.inspiringvacations.com/eyJrZXkiOiJlOTg4MTc1ZC04NDVlLTRmMjktYjE1Zi1mZjkyMGE0NDU4OGIuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ODAwfX19"
+        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/510px-Flag_of_Jordan.svg.png"
       },
       {
         "id": 5,
         "country": "United Kingdom",
         "continent": "Europe",
         "capital": "London",
-        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/510px-Flag_of_the_United_Kingdom_%281-2%29.svg.png",
-        "favoriteFood": "English Breakfast",
-        "favoriteFoodImage": "https://unpeeledjournal.com/wp-content/uploads/2023/04/52828002762_99f3b99b45_b.jpg"
+        "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/510px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
       }
     ]
   }
