@@ -38,6 +38,13 @@ function Form() {
         value={null}
         onChange={null} 
         />
+        <select 
+            value={null}
+            onChange={null}
+        >
+            <option value="true">Favorite</option>
+            <option value="false">Unfavorite</option>
+        </select>
         <button type="submit">Submit</button>
       </form>
     </div>
