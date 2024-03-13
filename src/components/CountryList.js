@@ -5,7 +5,8 @@ function CountryList({
     countries,
     setCountries
 }) {
-  
+
+// GET REQUEST
 useEffect(() => {
     fetch("http://localhost:3000/countries")
         .then(res => res.json())

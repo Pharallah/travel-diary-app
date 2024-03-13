@@ -8,7 +8,7 @@ function CountryCard({
 
 const [favorite, setFavorite] = useState(country.favorite)
 
-// UPDATES FAVORITE STATUS
+// UPDATES/PATCH FAVORITE STATUS
 function onCountryClick(id) {
     favorite ? setFavorite(false) : setFavorite(true)
     fetch(`http://localhost:3000/countries/${id}`, {
