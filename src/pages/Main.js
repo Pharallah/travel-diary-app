@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import Form from "../components/Form";
 import CountryList from "../components/CountryList";
 
-function Home() {
+function Main() {
 const [countries, setCountries] = useState([])
 
 // HANDLE POST REQUEST
@@ -19,7 +19,6 @@ return (
   <>
     <header className="headers">
       <h1>
-        Travel Diary App
         <span className="logo" role="img">
           🛫
         </span>
@@ -35,4 +34,4 @@ return (
   );
 }
 
-export default Home;
+export default Main;

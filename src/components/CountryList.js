@@ -8,7 +8,7 @@ function CountryList({
 
 // GET REQUEST
 useEffect(() => {
-    fetch("http://localhost:3000/countries")
+    fetch("http://localhost:4000/countries")
         .then(res => res.json())
         .then(list => setCountries(list))
 }, [])
@@ -30,4 +30,4 @@ return (
   )
 }
 
-export default CountryList
+export default CountryList;
