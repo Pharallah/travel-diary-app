@@ -10,7 +10,7 @@ const [countries, setCountries] = useState([])
 function onAddCountry(newCountry) {
   const updatedCountries = [
     ...countries,
-    newCountry
+    newCountry 
   ]
   setCountries(updatedCountries)
 }
