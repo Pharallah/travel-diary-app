@@ -1,9 +1,19 @@
 import Home from "./components/Home";
+import About from "./pages/About";
+import Favorite from "./pages/Favorite";
 
 const routes = [
     {
         path: "/",
         element: <Home />,
+    },
+    {
+        path: "/about",
+        element: <About />
+    },
+    {
+        path: "/favorites",
+        element: <Favorite />
     }
 ]
 

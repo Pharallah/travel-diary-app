@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import NavBar from "./NavBar";
 import Form from "./Form";
-import CountryList from "../pages/CountryList";
+import CountryList from "./CountryList";
 
 function Home() {
 const [countries, setCountries] = useState([])
-  
+
+// HANDLE POST REQUEST
 function onAddCountry(newCountry) {
   const updatedCountries = [
     ...countries,
