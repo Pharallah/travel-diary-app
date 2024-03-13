@@ -17,7 +17,7 @@ function onAddCountry(newCountry) {
 
 return (
   <>
-    <header className="home">
+    <header className="headers">
       <h1>
         Travel Diary App
         <span className="logo" role="img">

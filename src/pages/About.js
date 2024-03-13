@@ -1,13 +1,14 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
+import "../Home.css"
 
 function About() {
   return (
-    <div className="about">
-    <header>
+    <div>
+    <header className="headers">
         <NavBar />
+        <h1>About</h1>
     </header>
-    <h1>About</h1>
     <h3 className="about-header">Introduction</h3>
     <p>Welcome to the Travel Diary App, your ultimate companion in documenting your adventures across the globe! Are you an avid explorer with a passion for traversing new horizons? Look no further! Our app is tailor-made for travel enthusiasts like you who love to wander, explore, and soak in the beauty of diverse cultures and landscapes.</p>
     <p>With the Travel Diary App, you can effortlessly keep track of every country you've visited, creating a colorful mosaic of your global journey. From bustling cities to serene beaches, each destination holds a special place in your heart, and now, you can cherish those memories with just a tap of your finger.</p>

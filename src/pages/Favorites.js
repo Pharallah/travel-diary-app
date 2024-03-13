@@ -4,8 +4,9 @@ import NavBar from '../components/NavBar'
 function Favorites() {
   return (
     <>
-      <header>
+      <header className="headers">
         <NavBar />
+        <h1>Favorites</h1>
       </header>
       <ul></ul>
     </>
