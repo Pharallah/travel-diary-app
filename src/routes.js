@@ -1,6 +1,6 @@
 import Home from "./components/Home";
 import About from "./pages/About";
-import Favorite from "./pages/Favorite";
+import Favorite from "./pages/Favorites";
 
 const routes = [
     {
