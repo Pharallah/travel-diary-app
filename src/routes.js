@@ -1,24 +1,19 @@
-import App from "./pages/App";
-import Main from "./pages/Main";
+import Home from "./pages/Home";
 import About from "./pages/About";
-import Favorite from "./pages/Favorites";
+import CountryProfile from "./components/CountryProfile";
 
 const routes = [
     {
         path: "/",
-        element: <App />,
-    },
-    {
-        path: "/main",
-        element: <Main />,
+        element: <Home/>,
     },
     {
         path: "/about",
         element: <About />
     },
     {
-        path: "/favorites",
-        element: <Favorite />
+        path: "/country/:id",
+        element: <CountryProfile />
     }
 ]
 

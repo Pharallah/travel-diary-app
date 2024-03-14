@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function CountryCard({ 
     country,
@@ -11,7 +12,7 @@ const [favorite, setFavorite] = useState(country.favorite)
 // UPDATES/PATCH FAVORITE STATUS
 function onCountryClick(id) {
     favorite ? setFavorite(false) : setFavorite(true)
-    fetch(`http://localhost:3000/countries/${id}`, {
+    fetch(`http://localhost:4000/countries/${id}`, {
         method: "PATCH",
         headers: {
             "Content-Type": "application/json"
@@ -31,15 +32,19 @@ function onCountryClick(id) {
             })
         setCountries(updatedCountries)
     })
-    
 }
 
 return (
     <li className="card">
-        <h4>{country.country}</h4>
-        <img src={country.flagImage} alt={country.country} />
-        <p>Capital: {country.capital}</p>
-        {favorite ? <button onClick={e => onCountryClick(country.id)}>Unfavorite ♡</button> : <button onClick={e => onCountryClick(country.id)}>Favorite ♥️</button>}
+        <article>
+            <h4>{country.country}</h4>
+            <img src={country.flagImage} alt={country.country} />
+            <p>Capital: {country.capital}</p>
+            {favorite ? <button onClick={e => onCountryClick(country.id)}>Unlike</button> : <button onClick={e => onCountryClick(country.id)}>Like</button>}
+            <br></br>
+            <br></br>
+            <Link to={`/country/${country.id}`}>View Country</Link>
+        </article>
     </li>
   )
 }
