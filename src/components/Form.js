@@ -8,7 +8,8 @@ const [form, setForm] = useState({
     continent: "",
     capital: "",
     flagImage: "",
-    favorite: false
+    favorite: false,
+    diaryEntry: ""
 })
 
 // SETS UP CONTROLLED INPUTS
@@ -107,22 +108,28 @@ return (
             name="favorite"
             checked={form.favorite}
             onChange={handleChange}
-            style={{ margin: 'auto' }} // Adjust width as needed
+            style={{ 
+                margin: 'auto',
+                marginLeft: '8px'
+            }} // Adjust width as needed
             />
         </label>
         
       </div>
-      <textarea
-        name="comment"
-        placeholder="Enter your comment"
-        value={form.comment}
-        onChange={handleChange}
-        style={{
-          flex: 1,
-          height: '100%',
-          width: 'auto'
-        }}
-      />
+      <div style={{ marginBottom: '10px', width: '200px' }}>
+        <textarea
+            name="comment"
+            placeholder="Enter diary entry..."
+            value={form.diaryEntry}
+            onChange={handleChange}
+            style={{
+            flex: 1,
+            height: '100%',
+            width: '100%'
+            }}
+        />
+      </div>
+      
       <button type="submit">Submit</button>
     </form>
     </div>
