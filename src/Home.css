@@ -4,6 +4,7 @@ body {
   font-family: serif;
   background-color: #333333;
   color: #ffffff;
+  text-align: center;
 }
 
 body a {
@@ -11,7 +12,7 @@ body a {
 }
 
 body a:visited {
-  color: #d8bfd8;
+  color: #f9f2f9;
 }
 
 .profile {
@@ -29,6 +30,12 @@ body a:visited {
 
 .profile h3 {
   margin-top: 20px;
+}
+
+.profile p {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 .profile .content-box {

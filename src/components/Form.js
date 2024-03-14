@@ -12,6 +12,8 @@ const [form, setForm] = useState({
     diaryEntry: ""
 })
 
+console.log(form)
+
 // SETS UP CONTROLLED INPUTS
 function handleChange(e) {
     const key = e.target.name
@@ -30,9 +32,10 @@ function handleSubmit(e) {
         continent: form.continent,
         capital: form.capital,
         flagImage: form.flagImage,
-        favorite: form.favorite
+        favorite: form.favorite,
+        diaryEntry: form.diaryEntry
     }
-    fetch("http://localhost:3000/countries", {
+    fetch("http://localhost:4000/countries", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -46,7 +49,8 @@ function handleSubmit(e) {
         continent: "",
         capital: "",
         flagImage: "",
-        favorite: false
+        favorite: false,
+        diaryEntry: ""
     })
 }
 
@@ -61,7 +65,7 @@ return (
         placeholder="Country"
         value={form.country}
         onChange={handleChange} 
-        style={{ width: '100%', margin: 'auto' }} // Adjust width as needed
+        style={{ width: '100%', margin: 'auto' }}
         />
       </div>
       <div style={{ marginBottom: '10px', width: '200px' }}>
@@ -69,7 +73,7 @@ return (
         name="continent" 
         value={form.continent}
         onChange={handleChange} 
-        style={{ width: '104%', margin: 'auto' }} // Adjust width as needed
+        style={{ width: '104%', margin: 'auto' }}
         >
         <option value={null}>Choose Continent...</option>
         <option value="Asia">Asia</option>
@@ -87,7 +91,7 @@ return (
         placeholder="Capital"
         value={form.capital}
         onChange={handleChange} 
-        style={{ width: '100%', margin: 'auto' }} // Adjust width as needed
+        style={{ width: '100%', margin: 'auto' }}
         />
       </div>
       <div style={{ marginBottom: '10px', width: '200px' }}>
@@ -97,7 +101,7 @@ return (
         placeholder="Flag Image URL"
         value={form.flagImage}
         onChange={handleChange} 
-        style={{ width: '100%', margin: 'auto' }} // Adjust width as needed
+        style={{ width: '100%', margin: 'auto' }}
         />
       </div>
       <div style={{ marginBottom: '10px', width: '200px' }}>
@@ -111,14 +115,14 @@ return (
             style={{ 
                 margin: 'auto',
                 marginLeft: '8px'
-            }} // Adjust width as needed
+            }}
             />
         </label>
         
       </div>
       <div style={{ marginBottom: '10px', width: '200px' }}>
         <textarea
-            name="comment"
+            name="diaryEntry"
             placeholder="Enter diary entry..."
             value={form.diaryEntry}
             onChange={handleChange}
