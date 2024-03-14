@@ -1,12 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import NavBar from './NavBar';
 import { useParams } from 'react-router-dom'
+import "../Home.css"
 
 function CountryProfile() {
-  const [country, setCountry] = useState({})
+  const [isEditMode, setIsEditMode] = useState(false);
+  const [country, setCountry] = useState({
+    id: "",
+    country: "",
+    continent: "",
+    capital: "",
+    flagImage: "",
+    favorite: false,
+    diaryEntry: ""
+  })
   const params = useParams();
   const countryId = params.id
 
+  // HANDLE ROUTING VIA PARAMS
   useEffect(() => {
     fetch(`http://localhost:4000/countries/${countryId}`)
         .then(res => res.json())
@@ -14,12 +25,47 @@ function CountryProfile() {
         .catch(error => console.log(error))
   }, [countryId])
 
+  const handleEditButtonClick = () => {
+    setIsEditMode(true);
+  };
+
+  const handleSaveButtonClick = () => {
+    setIsEditMode(false);
+    fetch(`http://localhost:4000/countries/${countryId}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        diaryEntry: country.diaryEntry
+      })
+    })
+      .then(res => res.json())
+      .then(data => console.log(data))
+  };
+
     return (
     <>
         <NavBar />
-        <article>
-            <h1>{country.country}</h1>
-            <img src={country.flagImage} />
+        <article className="profile">
+          <h1>{country.country}</h1>
+          <img src={country.flagImage} alt={country.country} />
+          <h3>Diary Entry</h3>
+          {isEditMode ? (
+            <div className="content-box">
+              <textarea 
+              value={country.diaryEntry} 
+              onChange={e => setCountry({
+                ...country,
+                diaryEntry: e.target.value
+              })} 
+              />
+              <button onClick={handleSaveButtonClick}>Save</button>
+            </div>
+          ) : (
+            <p>{country.diaryEntry}</p>
+          )}
+          {!isEditMode && <button onClick={handleEditButtonClick}>Edit</button>}
         </article>
     </>
   )
