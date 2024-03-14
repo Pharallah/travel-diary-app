@@ -52,51 +52,79 @@ function handleSubmit(e) {
 return (
     <div className="new-country-form">
       <h2>New Country Visited</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div style={{ marginBottom: '10px', width: '200px' }}>
         <input 
         type="text" 
         name="country" 
         placeholder="Country"
         value={form.country}
         onChange={handleChange} 
+        style={{ width: '100%', margin: 'auto' }} // Adjust width as needed
         />
+      </div>
+      <div style={{ marginBottom: '10px', width: '200px' }}>
         <select 
-            name="continent" 
-            value={form.continent}
-            onChange={handleChange} 
+        name="continent" 
+        value={form.continent}
+        onChange={handleChange} 
+        style={{ width: '104%', margin: 'auto' }} // Adjust width as needed
         >
-            <option value={null}>Please choose...</option>
-            <option value="Asia">Asia</option>
-            <option value="Africa">Africa</option>
-            <option value="Europe">Europe</option>
-            <option value="North America">North America</option>
-            <option value="South America">South America</option>
-            <option value="Australia/Oceania">Australia/Oceania</option>
+        <option value={null}>Choose Continent...</option>
+        <option value="Asia">Asia</option>
+        <option value="Africa">Africa</option>
+        <option value="Europe">Europe</option>
+        <option value="North America">North America</option>
+        <option value="South America">South America</option>
+        <option value="Australia/Oceania">Australia/Oceania</option>
         </select>
+      </div>
+      <div style={{ marginBottom: '10px', width: '200px' }}>
         <input 
         type="text" 
         name="capital" 
         placeholder="Capital"
         value={form.capital}
         onChange={handleChange} 
-        />  
+        style={{ width: '100%', margin: 'auto' }} // Adjust width as needed
+        />
+      </div>
+      <div style={{ marginBottom: '10px', width: '200px' }}>
         <input 
         type="text" 
         name="flagImage" 
         placeholder="Flag Image URL"
         value={form.flagImage}
         onChange={handleChange} 
+        style={{ width: '100%', margin: 'auto' }} // Adjust width as needed
         />
-        <label>Favorite?
-        <input 
+      </div>
+      <div style={{ marginBottom: '10px', width: '200px' }}>
+        <label>
+            Favorite?
+            <input 
             type="checkbox"
             name="favorite"
             checked={form.favorite}
             onChange={handleChange}
-        />
+            style={{ margin: 'auto' }} // Adjust width as needed
+            />
         </label>
-        <button type="submit">Submit</button>
-      </form>
+        
+      </div>
+      <textarea
+        name="comment"
+        placeholder="Enter your comment"
+        value={form.comment}
+        onChange={handleChange}
+        style={{
+          flex: 1,
+          height: '100%',
+          width: 'auto'
+        }}
+      />
+      <button type="submit">Submit</button>
+    </form>
     </div>
   )
 }

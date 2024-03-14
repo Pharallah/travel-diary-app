@@ -19,6 +19,7 @@ function CountryProfile() {
         <NavBar />
         <article>
             <h1>{country.country}</h1>
+            <img src={country.flagImage} />
         </article>
     </>
   )

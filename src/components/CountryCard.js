@@ -36,10 +36,10 @@ function onCountryClick(id) {
 
 return (
     <li className="card">
-        <article>
+        <article style={{textAlign: "center"}}>
             <h4>{country.country}</h4>
             <img src={country.flagImage} alt={country.country} />
-            <p>Capital: {country.capital}</p>
+            <br></br>
             {favorite ? <button onClick={e => onCountryClick(country.id)}>Unlike</button> : <button onClick={e => onCountryClick(country.id)}>Like</button>}
             <br></br>
             <br></br>
