@@ -12,8 +12,6 @@ const [form, setForm] = useState({
     diaryEntry: ""
 })
 
-console.log(form)
-
 // SETS UP CONTROLLED INPUTS
 function handleChange(e) {
     const key = e.target.name
@@ -56,19 +54,18 @@ function handleSubmit(e) {
 
 return (
     <div className="new-country-form">
-      <h2>New Country Visited</h2>
-      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <div style={{ marginBottom: '10px', width: '200px' }}>
+      <h2>Post New Country</h2>
+      <form onSubmit={handleSubmit}>
+      <div className="form-input">
         <input 
         type="text" 
         name="country" 
         placeholder="Country"
         value={form.country}
         onChange={handleChange} 
-        style={{ width: '100%', margin: 'auto' }}
         />
       </div>
-      <div style={{ marginBottom: '10px', width: '200px' }}>
+      <div className="form-input">
         <select 
         name="continent" 
         value={form.continent}
@@ -84,27 +81,25 @@ return (
         <option value="Australia/Oceania">Australia/Oceania</option>
         </select>
       </div>
-      <div style={{ marginBottom: '10px', width: '200px' }}>
+      <div className="form-input">
         <input 
         type="text" 
         name="capital" 
         placeholder="Capital"
         value={form.capital}
         onChange={handleChange} 
-        style={{ width: '100%', margin: 'auto' }}
         />
       </div>
-      <div style={{ marginBottom: '10px', width: '200px' }}>
+      <div className="form-input">
         <input 
         type="text" 
         name="flagImage" 
         placeholder="Flag Image URL"
         value={form.flagImage}
         onChange={handleChange} 
-        style={{ width: '100%', margin: 'auto' }}
         />
       </div>
-      <div style={{ marginBottom: '10px', width: '200px' }}>
+      <div className="form-input">
         <label>
             Favorite?
             <input 
@@ -112,28 +107,17 @@ return (
             name="favorite"
             checked={form.favorite}
             onChange={handleChange}
-            style={{ 
-                margin: 'auto',
-                marginLeft: '8px'
-            }}
             />
         </label>
-        
       </div>
-      <div style={{ marginBottom: '10px', width: '200px' }}>
+      <div className="form-input">
         <textarea
             name="diaryEntry"
             placeholder="Enter diary entry..."
             value={form.diaryEntry}
             onChange={handleChange}
-            style={{
-            flex: 1,
-            height: '100%',
-            width: '100%'
-            }}
         />
       </div>
-      
       <button type="submit">Submit</button>
     </form>
     </div>

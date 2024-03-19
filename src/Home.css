@@ -30,6 +30,7 @@ body a:visited {
 
 .profile h3 {
   margin-top: 20px;
+  text-decoration: underline;
 }
 
 .profile p {
@@ -81,12 +82,21 @@ header h1 {
 
 .new-country-form form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .new-country-form input {
-  margin-right: 2rem;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.new-country-form textarea {
   flex: 1;
+  height: 100%;
+  width: 100%;
 }
 
 .new-country-form select {
@@ -96,6 +106,11 @@ header h1 {
 
 .new-country-form button {
   width: 150px;
+}
+
+.form-input {
+  margin-bottom: 10px;
+  width: 200px;
 }
 
 .cards {

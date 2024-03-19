@@ -15,8 +15,8 @@
       "continent": "Asia",
       "capital": "Tokyo",
       "flagImage": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/510px-Flag_of_Japan.svg.png",
-      "favorite": false,
-      "diaryEntry": "One of the coolest places on Earth. I especially love the Japanese countryside where its calm and serenity give me life. It makes sense that people live longer here"
+      "favorite": true,
+      "diaryEntry": "One of the coolest places on Earth. I especially love the Japanese countryside where its calm and serenity give me life. It makes sense that people live longer here."
     },
     {
       "id": 3,
@@ -24,8 +24,8 @@
       "continent": "Europe",
       "capital": "Lisbon",
       "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/510px-Flag_of_Portugal.svg.png",
-      "favorite": true,
-      "diaryEntry": "Went for the first time for Abe's birthday in 2019. Ended up meeting the love of my life. The kindest and most peaceful people I've met so far. Very beautiful and quiet. Even their biggest cities are not nearly as loud as many of the ones I've been to. "
+      "favorite": false,
+      "diaryEntry": "Went for the first time for Abe's birthday in 2019. Ended up meeting the love of my life. The kindest and most peaceful people I've met so far. Very beautiful and quiet. Small town vibes next to the ocean. Even their biggest cities are not nearly as loud as many of the ones I've been to. "
     },
     {
       "id": 4,
@@ -58,9 +58,9 @@
       "country": "India",
       "continent": "Asia",
       "capital": "Delhi",
-      "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/510px-Flag_of_Turkey.svg.png",
-      "favorite": false,
-      "diaryEntry": "asdfasdfsadf",
+      "flagImage": "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/2560px-Flag_of_India.svg.png",
+      "favorite": true,
+      "diaryEntry": "Never actually been here before.",
       "id": 7
     }
   ]

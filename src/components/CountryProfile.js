@@ -25,11 +25,13 @@ function CountryProfile() {
         .catch(error => console.log(error))
   }, [countryId])
 
-  const handleEditButtonClick = () => {
+  // 
+  function handleEditButtonClick() {
     setIsEditMode(true);
   };
 
-  const handleSaveButtonClick = () => {
+  // PATCH DIARY ENTRY
+  function handleSaveButtonClick() {
     setIsEditMode(false);
     fetch(`http://localhost:4000/countries/${countryId}`, {
       method: "PATCH",
@@ -50,6 +52,8 @@ function CountryProfile() {
         <article className="profile">
           <h1>{country.country}</h1>
           <img src={country.flagImage} alt={country.country} />
+          <h4>Capital: {country.capital}</h4>
+          <h4>Continent: {country.continent}</h4>
           <h3>Diary Entry</h3>
           {isEditMode ? (
             <div className="content-box">

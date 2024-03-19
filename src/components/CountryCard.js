@@ -12,6 +12,7 @@ const [favorite, setFavorite] = useState(country.favorite)
 // UPDATES/PATCH FAVORITE STATUS
 function onCountryClick(id) {
     favorite ? setFavorite(false) : setFavorite(true)
+    
     fetch(`http://localhost:4000/countries/${id}`, {
         method: "PATCH",
         headers: {
@@ -40,7 +41,7 @@ return (
             <h4>{country.country}</h4>
             <img src={country.flagImage} alt={country.country} />
             <br></br>
-            {favorite ? <button onClick={e => onCountryClick(country.id)}>Unlike</button> : <button onClick={e => onCountryClick(country.id)}>Like</button>}
+            {favorite ? <button onClick={e => onCountryClick(country.id)}>Unlike 👎</button> : <button onClick={e => onCountryClick(country.id)}>Like 👍</button>}
             <br></br>
             <br></br>
             <Link to={`/country/${country.id}`}>View Country</Link>
