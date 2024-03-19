@@ -21,7 +21,7 @@ return (
       <h1>
         TRAVEL DIARY APP
         <span className="logo" role="img">
-          🛫
+        🌎
         </span>
       </h1>
       <NavBar />

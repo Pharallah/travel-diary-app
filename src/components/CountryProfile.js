@@ -53,7 +53,7 @@ function CountryProfile() {
           <h1>{country.country}</h1>
           <img src={country.flagImage} alt={country.country} />
           <h4>Capital: {country.capital}</h4>
-          <h4>Continent: {country.continent}</h4>
+          <h4>Date Visited: {country.date}</h4>
           <h3>Diary Entry</h3>
           {isEditMode ? (
             <div className="content-box">

@@ -5,7 +5,7 @@ function Form({
 }) {
 const [form, setForm] = useState({
     country: "",
-    continent: "",
+    date: "",
     capital: "",
     flagImage: "",
     favorite: false,
@@ -27,7 +27,7 @@ function handleSubmit(e) {
     e.preventDefault()
     const newCountry = {
         country: form.country,
-        continent: form.continent,
+        date: form.date,
         capital: form.capital,
         flagImage: form.flagImage,
         favorite: form.favorite,
@@ -44,7 +44,7 @@ function handleSubmit(e) {
     .then(newCountry => onAddCountry(newCountry))
     setForm({
         country: "",
-        continent: "",
+        date: "",
         capital: "",
         flagImage: "",
         favorite: false,
@@ -66,20 +66,13 @@ return (
         />
       </div>
       <div className="form-input">
-        <select 
-        name="continent" 
-        value={form.continent}
-        onChange={handleChange} 
-        style={{ width: '104%', margin: 'auto' }}
-        >
-        <option value={null}>Choose Continent...</option>
-        <option value="Asia">Asia</option>
-        <option value="Africa">Africa</option>
-        <option value="Europe">Europe</option>
-        <option value="North America">North America</option>
-        <option value="South America">South America</option>
-        <option value="Australia/Oceania">Australia/Oceania</option>
-        </select>
+        <input 
+          type="text" 
+          name="date" 
+          placeholder="Date Visited (Month Year)"
+          value={form.date}
+          onChange={handleChange} 
+        />
       </div>
       <div className="form-input">
         <input 

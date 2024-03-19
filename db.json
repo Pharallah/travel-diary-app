@@ -3,7 +3,7 @@
     {
       "id": 1,
       "country": "Philippines",
-      "continent": "Asia",
+      "date": "November 2017",
       "capital": "Manila",
       "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/1600px-Flag_of_the_Philippines.svg.png",
       "favorite": false,
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "country": "Japan",
-      "continent": "Asia",
+      "date": "November 2017",
       "capital": "Tokyo",
       "flagImage": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/510px-Flag_of_Japan.svg.png",
       "favorite": true,
@@ -21,7 +21,7 @@
     {
       "id": 3,
       "country": "Portugal",
-      "continent": "Europe",
+      "date": "October 2019",
       "capital": "Lisbon",
       "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/510px-Flag_of_Portugal.svg.png",
       "favorite": false,
@@ -30,7 +30,7 @@
     {
       "id": 4,
       "country": "Jordan",
-      "continent": "Asia",
+      "date": "February 2020",
       "capital": "Amman",
       "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/510px-Flag_of_Jordan.svg.png",
       "favorite": true,
@@ -39,7 +39,7 @@
     {
       "id": 5,
       "country": "United Kingdom",
-      "continent": "Europe",
+      "date": "March 2014",
       "capital": "London",
       "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/510px-Flag_of_the_United_Kingdom_%281-2%29.svg.png",
       "favorite": true,
@@ -47,21 +47,12 @@
     },
     {
       "country": "France",
-      "continent": "Europe",
+      "date": "February 2020",
       "capital": "Paris",
       "flagImage": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/510px-Flag_of_France.svg.png",
       "favorite": false,
       "id": 6,
       "diaryEntry": "Went here Feb 2019 right after visiting Thaer in Amman. I met with Joana here. It would be the first time I would see her after meeting her in Portugal. We visited the Louvre, went up the Eiffel Tower, went to a few museums, saw a live Jazz band playing, and ate food from around the world. This was where she first tried falafel and fell in love with it. This was also where she ate pho for the first time. What an unforgettable time I've had here with Joana."
-    },
-    {
-      "country": "India",
-      "continent": "Asia",
-      "capital": "Delhi",
-      "flagImage": "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/2560px-Flag_of_India.svg.png",
-      "favorite": true,
-      "diaryEntry": "Never actually been here before.",
-      "id": 7
     }
   ]
 }
