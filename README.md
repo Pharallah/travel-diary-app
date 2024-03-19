@@ -20,7 +20,7 @@ To run the Travel Diary App locally, follow these steps:
 
 ## Usage
 
-1. **Adding a New Country:** Click on the "Add Country" button and fill out the form with the country's details.
+1. **Adding a New Country:** Fill out the form with the newly visited country's details and submit form.
 2. **Liking/Unliking a Country:** Toggle the Like button to like or unlike a country.
 3. **Diary Entries:** Click on a country's "View Country", then click on "Edit" to revise your diary entry.
 
