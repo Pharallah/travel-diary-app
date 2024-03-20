@@ -5,7 +5,7 @@ import "../Home.css"
 
 function CountryProfile() {
   const [isEditMode, setIsEditMode] = useState(false);
-  const [country, setCountry] = useState({
+  const [currentCountry, setCurrentCountry] = useState({
     id: "",
     country: "",
     continent: "",
@@ -17,21 +17,29 @@ function CountryProfile() {
   const params = useParams();
   const countryId = params.id
 
-  // HANDLE ROUTING VIA PARAMS
+  // HANDLE ROUTING VIA PARAMS & POPULATE CURRENT COUNTRY
   useEffect(() => {
     fetch(`http://localhost:4000/countries/${countryId}`)
         .then(res => res.json())
-        .then(data => setCountry(data))
+        .then(data => setCurrentCountry(data))
         .catch(error => console.log(error))
   }, [countryId])
 
-  // 
+  // TOGGLES EDIT MODE
   function handleEditButtonClick() {
     setIsEditMode(true);
   };
 
+  // HANDLE SAVE FOR DIARY ENTRY FEATURE
+  function handleEdit(e) {
+    setCurrentCountry({
+      ...currentCountry,
+      diaryEntry: e.target.value
+    })
+  }
+
   // PATCH DIARY ENTRY
-  function handleSaveButtonClick() {
+  function handleSaveButtonClick(e) {
     setIsEditMode(false);
     fetch(`http://localhost:4000/countries/${countryId}`, {
       method: "PATCH",
@@ -39,7 +47,7 @@ function CountryProfile() {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        diaryEntry: country.diaryEntry
+        diaryEntry: currentCountry.diaryEntry
       })
     })
       .then(res => res.json())
@@ -50,24 +58,21 @@ function CountryProfile() {
     <>
         <NavBar />
         <article className="profile">
-          <h1>{country.country}</h1>
-          <img src={country.flagImage} alt={country.country} />
-          <h4>Capital: {country.capital}</h4>
-          <h4>Date Visited: {country.date}</h4>
+          <h1>{currentCountry.country}</h1>
+          <img src={currentCountry.flagImage} alt={currentCountry.country} />
+          <h4>Capital: {currentCountry.capital}</h4>
+          <h4>Date Visited: {currentCountry.date}</h4>
           <h3>Diary Entry</h3>
           {isEditMode ? (
             <div className="content-box">
               <textarea 
-              value={country.diaryEntry} 
-              onChange={e => setCountry({
-                ...country,
-                diaryEntry: e.target.value
-              })} 
+              value={currentCountry.diaryEntry} 
+              onChange={handleEdit} 
               />
               <button onClick={handleSaveButtonClick}>Save</button>
             </div>
           ) : (
-            <p>{country.diaryEntry}</p>
+            <p>{currentCountry.diaryEntry}</p>
           )}
           {!isEditMode && <button onClick={handleEditButtonClick}>Edit</button>}
         </article>

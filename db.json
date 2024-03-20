@@ -7,7 +7,7 @@
       "capital": "Manila",
       "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/1600px-Flag_of_the_Philippines.svg.png",
       "favorite": false,
-      "diaryEntry": "The Motherland. Born and raised here for the first 10 years of my life. Will forever be my home although I'm far. People's kindness and tenacity for life is unmatched here."
+      "diaryEntry": "The Motherland. Born and raised here for the first 10 years of my life. Will forever be my home although I'm far. People's kindness and tenacity for life is unmatched here. I need to visit more especially when Lola is only getting older.\n"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "capital": "Tokyo",
       "flagImage": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/510px-Flag_of_Japan.svg.png",
       "favorite": true,
-      "diaryEntry": "One of the coolest places on Earth. I especially love the Japanese countryside where its calm and serenity give me life. It makes sense that people live longer here."
+      "diaryEntry": "One of the coolest places on Earth. I especially love the Japanese countryside where its calm and serenity give me life. Food was obviously amazing. It makes sense that people live longer here. I still have to see the life-size Gundam! Until next time.\n\n"
     },
     {
       "id": 3,
@@ -43,7 +43,7 @@
       "capital": "London",
       "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/510px-Flag_of_the_United_Kingdom_%281-2%29.svg.png",
       "favorite": true,
-      "diaryEntry": "March 2014. Went to London for a week to study Public Health. Modern meets Medieval. Leeds Castle was super cool. Food was...nothing to write about. It's a bustling city and walking everywhere got tiring. The museums are great until you realize almost all of these treasures should really go back to where they're from..."
+      "diaryEntry": "March 2014. Went to London for a week to study Public Health. Modern meets Medieval. Leeds Castle was super cool. Food was...nothing to write about. It's a bustling city and walking everywhere got tiring. The museums are great until you realize almost all of these treasures should really go back to where they're from.."
     },
     {
       "country": "France",
@@ -53,6 +53,15 @@
       "favorite": false,
       "id": 6,
       "diaryEntry": "Went here Feb 2019 right after visiting Thaer in Amman. I met with Joana here. It would be the first time I would see her after meeting her in Portugal. We visited the Louvre, went up the Eiffel Tower, went to a few museums, saw a live Jazz band playing, and ate food from around the world. This was where she first tried falafel and fell in love with it. This was also where she ate pho for the first time. What an unforgettable time I've had here with Joana."
+    },
+    {
+      "country": "Canada",
+      "date": "March 2024",
+      "capital": "Ottawa",
+      "flagImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/2880px-Flag_of_Canada_%28Pantone%29.svg.png",
+      "favorite": false,
+      "diaryEntry": "Visited the cousins.",
+      "id": 7
     }
   ]
 }

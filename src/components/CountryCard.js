@@ -12,7 +12,6 @@ const [favorite, setFavorite] = useState(country.favorite)
 // UPDATES/PATCH FAVORITE STATUS
 function onCountryClick(id) {
     favorite ? setFavorite(false) : setFavorite(true)
-    
     fetch(`http://localhost:4000/countries/${id}`, {
         method: "PATCH",
         headers: {
